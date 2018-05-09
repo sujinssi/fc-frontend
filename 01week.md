@@ -15,10 +15,10 @@ Computation : 시스템적인 방법으로 과정을 수행하는 것 연산과�
 메인보드
 키보드
 
-#컴퓨터는 직류전압. 그래서 교류전압인 220v를 9-12?v의 직류전압으로 바꿔주는 파워서포트가 필요함
+컴퓨터는 직류전압. 그래서 교류전압인 220v를 9-12?v의 직류전압으로 바꿔주는 파워서포트가 필요함
 
 Basic computer architecture
-*하드웨어의 동작
+* 하드웨어의 동작
 Memory 
 CPU : control unit(program counter) / arithmetic logic unit(사칙연산, 논리연산)
 - input이 들어오면 control unit에 저장해서 순서를 기다림. 순서대로 메모리에 가져다주면 arithmetic logic unit에서 처리해서 결과값을 다시 memory에 쌓음. 그것을 output에 보여줌
@@ -404,3 +404,21 @@ hyperloop.enqueue('mama');hyperloop.enqueue('musk');
 
 hyperloop.dequeue
 </pre></code>
+
+*  stack이랑 Queue의 차이만 알면 됨
+
+    * Linked List
+
+        + 자스는 어레첫번째 값을 주고 두번째 값이 들어갈 주소를 준다. **값-다음행선지**를 주는게 linked list.
+
+        + A linked list is **a linear collection** of data elements, in which linear order is not given by their physical placement in memory.
+
+    * Tree
+
+        + A tree is an abstract model of a hierarchical structure.
+        (hierarchical: arranged in order of rank.)
+
+        + 동그라미를 node, 화살표를  edge라고 함.
+
+    * 저 트리를 탐색하는 것을 stack을 쓰느냐, queue를 쓰느냐에 따라 진행방향이 달라짐. 
+
