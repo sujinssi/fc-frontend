@@ -403,9 +403,22 @@ $"
 ```
 $git push origin master
 ```
+---
+github에서 MIT license가 가장 자유로운 라이센스다. 만약 GNU open소스는 별로 오픈되어 있지 않아서
+어떤 오픈소스가 저 라이센스라면 그 소스는 안쓰는게 좋다.
 
-
-
+이미 깃이 연결되어있는 폴더와는 연결하면 안된다. 꼬임.
+방금만든 깃 레포를 연결해서 와보자
+깃헙 원격저장소 -> 로컬로 클론 해보자
+$git clone https://github.com/sujinssi/TIL.git
+ls로 찍어보면 방금 만든 TIL가 받아져내려온 것을 알 수 있다. 
+$ cd TIL
+$ mkdir README.md
+$ vi README.md // 내용을 수정한다
+$ git add .
+$ git status
+$ git commit - "modified content"
+$ git push origin master
 
 
 ---
