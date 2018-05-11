@@ -12,3 +12,8 @@
 [EDX][EDX]기업, 비영리단체에서 제공하는 강의. 여기 강의 중에 [html/css fundamentals][fundemental]강의가 hrml을 개발한 곳에서 만든 강의. 
 [EDX]: https://www.edx.org/
 [fundemental]: https://www.edx.org/course/html5-css-fundamentals-w3cx-html5-0x-0
+
+
+* Angular로 pwa(Progressive Web Apps) 구현
+https://pwa.ng/
+이것으로 뭘 할 수 있을까

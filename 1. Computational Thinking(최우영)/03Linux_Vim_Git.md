@@ -1,43 +1,18 @@
-# Fastcampus 
-## Frontend Dev SCHOOL
-### Collaborate with git, github
 
+# 1주차-180511(목)
 ---
-<!--
-page_number: true
-$size: A4
-footer : fastcampus 프론트엔드 개발 스쿨, Wooyoung Choi, 2018
--->
+## [1] 
 
----
-## Linux
-![](https://www.extremetech.com/wp-content/uploads/2012/05/Linux-logo-without-version-number-banner-sized.jpg)
+## 1. Linux
 
----
 ## Before Linux
-![](http://www.unix.org/u30logo/unix_logo.gif)
+
 - 1965년 데니스 리치, 켄 톰슨 외 x명이 AT&T Bell 연구소에서 PDP-7 기반 어셈블리어로 작성한 UNIX를 개발
  
-
----
-## Before Linux
-
-![](https://upload.wikimedia.org/wikipedia/commons/3/36/Ken_n_dennis.jpg)
 - 1973년 데니스 리치와 켄 톰슨이 C를 개발한 뒤, C 기반 UNIX 재작성
 
----
-## Before Linux
-![](http://i1-news.softpedia-static.com/images/news2/Richard-Stallman-Says-He-Created-GNU-Which-Is-Called-Often-Linux-482416-2.jpg)
-- 1984년 리차드 스톨먼이 오픈 소프트웨어 자유성 확보를 위한 GNU 프로젝트 돌입
+- 1984년 리차드 스톨먼이 오픈 소프트웨어 자유성 확보를 위한 GNU 프로젝트 돌입 (GNU == `G`NU is `N`ot `U`nix)
 
----
-### Meaning of GNU
-
-GNU == `G`NU is `N`ot `U`nix
-
----
-## Before Linux
-![](http://i.imgur.com/SMYPY.jpg)
 - But, GNU 프로젝트에는 커널이 없었고..
 
 ---
@@ -160,6 +135,7 @@ $ python --help
 - 참고자료 :  https://asciinema.org/a/6cciD0bDcHnH6i6G2n64PJtIa
 
 ---
+##2. Vim
 ## Vim
 ![](https://www.vim.sexy/img/Vimlogo.svg)
 - 윈도우의 메모장이랑 비슷한데 많은 추가기능을 붙일 수 있다. 
@@ -249,7 +225,7 @@ press `esc` to escape
 
 
 ---
-
+##3. Git
 ## git
 ![](http://ipengineer.net/wp-content/uploads/2015/04/git-logo.jpg)
 
@@ -421,8 +397,51 @@ $ git commit - "modified content"
 $ git push origin master
 
 
+* 레포 지우는 법
+
+setting-danger zone
+
 ---
 ## Important github User Interface
+
+spoqa.github.io처럼 기술 뿜뿜하는 블로그를 만들 수 있다. 
+유저네임.github.io로 사용할 수 있음. 
+블로그 글 하나당 html파일 하나가 존재해야 하는 단점이 있다. 
+
+* 블로그 만들어보자!
+1. 새로운 레포를 먼저 판다(sujinssi.github.io)
+2. 새 래포 주소를 복사해서 
+```
+$ git clone https://github.com/sujinssi/sujinssi.github.io.git
+```
+3. 클론된 레포 파일 안에 index.html파일을 만들어준다
+```
+$ cd sujinssi/github.io.git
+$ touch index.html
+```
+4. ...? 졸아서 기억이 안남
+
+* commit의 개념
+
+ : 커밋은 기능별로 다르게 해주는 것이 좋다
+ ex. 결제기능 + 유저 로그인 ==> 하나의 커밋 (x)
+     결제기능 ==> 결제 커밋
+     유저로그인 ==>유저로그인 커밋
+
+로컬 파일 안에도 새로운 파일을 만들었고, git에서도 how-to-use-git.md 새로운 것을 했다(?) 
+
+1. 새로운 폴더를 dev폴더 안에 만들어준다.
+2. 안에 180510-sample.md를 만든다
+3. git init
+4. 180510-sample.md 파일 내용을 만든다
+5. 우리가 만든 파일 먼저 푸시해보자
+우리가 필요한 기능만 싸서 송장에 붙여서 택배를 붙이는 것. 일단 인덱스에 있는 것 먼저 올리자
+git commit -m "Add 180510-sample.md"
+git add git/180510-how-to-use-git.md
+git status
+git commit -m "edit 180510-how-to-use-git.md"
+git status
+git push origin master
 
 ---
 ### Star
@@ -511,24 +530,23 @@ Create New file `index.html`
 `Jekyll` > `Hugo` > `Hexo`
 
 ---
-## What is branch?
 
----
-## What is branch?
+## What is branch? 
 ![](https://www.sideshowtoy.com/assets/products/3005011-groot/lg/marvel-guardians-of-the-galaxy-groot-premium-format-3005011-02.jpg)
 
----
+
 ## What is branch?
 분기점을 생성하고 독립적으로 코드를 변경할 수 있도록 도와주는 모델
 
 ex)
 
-master branch
+master branch : 생성하지 않아도 만들어지는 메인 차원.
 ```python
 print('hello world!')
 ```
 
-another branch
+another branch 
+    -> 본 소스에 영향을 미치지 않고 코딩가능. 보통 배포용
 ```python
 for i in range(1,10):
     print('hello world for the %s times!' % i)
@@ -582,6 +600,8 @@ see the difference between two branches
 ---
 ## git flow strategy
 ![](https://media.licdn.com/mpr/mpr/shrinknp_800_800/AAEAAQAAAAAAAAKMAAAAJDM2NjY0OWE4LTc0NDAtNDdkMS1hMDdiLWU3MzkwM2FjYWExNw.png)
+
+
 
 ---
 ## use git flow easily!
@@ -675,5 +695,18 @@ Make some change
 
 ---
 ## Assignment
-[Try git](https://try.github.io/levels/1/challenges/1)
-마지막 결과를 Print Screen 후 조교님께 제출해주세요.
+
+1. [Try git](https://try.github.io/levels/1/challenges/1)
+마지막 결과를 Print Screen 후 'fds-random'에 제출
+2. TIL에 오늘 배운 깃 정리해서 올리기
+
+
+* 강의 녹화 영상
+
+	https://asciinema.org/a/rpankaih2wQt2NfdX1hdlbzVb
+	https://asciinema.org/a/6cciD0bDcHnH6i6G2n64PJtIa
+
+	https://youtu.be/A3wb9ldtMjY
+	https://youtu.be/jBywy9G0CEE
+	https://youtu.be/0CR4qLBhhBA
+	https://youtu.be/Zk1akSOtCP4
