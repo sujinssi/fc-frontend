@@ -17,3 +17,12 @@
 * Angular로 pwa(Progressive Web Apps) 구현
 https://pwa.ng/
 이것으로 뭘 할 수 있을까
+
+* 깃허브 관리하기
+https://wayhome25.github.io/
+
+* 도메인 구매
+https://jinwoopark.com/2018/05/10/blog-http-to-https/
+
+* 참고 블로그
+https://github.com/wayhome25/TIL
